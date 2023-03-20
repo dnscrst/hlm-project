@@ -1,0 +1,240 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  font-weight: 400; }
+
+html {
+  font-size: 10px; }
+
+@media only screen and (min-width: 0) {
+  .main-color {
+    color: #FF9503; }
+  p {
+    font-size: 1.4rem;
+    line-height: 1.6; }
+  .heading-third {
+    font-size: 4.3rem;
+    text-align: center;
+    margin-bottom: 5rem; }
+  .center-text {
+    text-align: center; } }
+
+@media only screen and (min-width: 768px) {
+  .heading-third {
+    font-size: 3.5rem; }
+  .features {
+    align-items: baseline;
+    flex-direction: row; }
+  .features-item p {
+    max-width: 19rem;
+    font-size: 1.8rem; }
+  .features-item img {
+    width: 5rem; } }
+
+@media only screen and (min-width: 0px) {
+  #banner-section {
+    background-color: #000034;
+    background-image: url("/assets/bg-01.jpg");
+    background-repeat: no-repeat;
+    background-size: 207%;
+    background-position: -84rem 131%;
+    padding: 4rem 8rem 40rem;
+    text-align: center; }
+    #banner-section h1, #banner-section p, #banner-section .subtitle {
+      color: white; }
+    #banner-section h1 {
+      font-size: 11rem;
+      margin: 7% 0; }
+    #banner-section .subtitle {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      padding: 0 9rem; }
+    #banner-section p {
+      margin: 3rem 0 6rem;
+      font-size: 1.3rem; }
+    #banner-section a, #banner-section a:link, #banner-section a:visited {
+      padding: 1.5rem 6rem;
+      background-color: #FF9503;
+      font-size: 1.4rem;
+      border-radius: 0.2rem;
+      text-decoration: none;
+      color: black;
+      font-weight: bold; }
+  .features {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    align-items: center;
+    flex-direction: column; }
+  .features-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .features-item p {
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 8rem;
+      max-width: 65rem;
+      font-size: 4rem; }
+    .features-item img {
+      width: 11rem; }
+  #description-section {
+    padding: 10rem 8rem; }
+    #description-section p {
+      margin-top: -1rem; }
+  #features-section {
+    background-image: url("../assets/bg-02.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10rem 7rem 2rem; }
+    #features-section h3, #features-section p {
+      color: white; }
+  #benefits-section {
+    padding: 10rem 7rem 2rem; }
+    #benefits-section h3 {
+      background-color: #FF9503;
+      font-weight: normal;
+      padding: 3rem 9rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15); }
+      #benefits-section h3 span {
+        font-weight: bold; }
+  #form-section {
+    background-image: url("../assets/bg-03.jpg");
+    background-size: 140%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-position: bottom;
+    padding: 3rem 3rem 38rem; }
+    #form-section form {
+      display: flex;
+      flex-direction: column;
+      background-color: #000034;
+      padding: 5rem 4rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15); }
+      #form-section form h5 {
+        font-size: 4rem;
+        color: white;
+        max-width: 100%;
+        text-align: center;
+        line-height: 1.6; }
+      #form-section form .text-input, #form-section form button {
+        width: 100%;
+        padding: 3.5rem;
+        margin-top: 4.5rem;
+        border-radius: 0.5rem;
+        font-size: 4rem; }
+      #form-section form button {
+        background-color: #FF9503;
+        font-weight: bold; }
+      #form-section form .check-box {
+        margin-top: 3rem;
+        display: flex;
+        text-align: center; }
+        #form-section form .check-box label {
+          color: white;
+          font-size: 3rem;
+          margin-left: 1rem; }
+  #footer {
+    padding: 1rem 0 2rem; }
+    #footer div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 3rem 7rem;
+      box-shadow: 0 1.5rem 7rem rgba(0, 0, 0, 0.15);
+      margin-bottom: 2rem; }
+      #footer div img {
+        width: 16rem; } }
+
+@media only screen and (min-width: 768px) {
+  #banner-section {
+    background-size: cover;
+    background-position: center;
+    padding: 7.5rem 0 5.8rem 7.5rem;
+    text-align: left; }
+    #banner-section h1 {
+      font-size: 6.5rem;
+      margin-bottom: 2.5rem;
+      max-width: 56rem; }
+    #banner-section .subtitle {
+      padding: 0; }
+    #banner-section p {
+      max-width: 44.8rem; }
+  .features {
+    align-items: baseline;
+    flex-direction: row; }
+  .features-item p {
+    max-width: 19rem;
+    font-size: 1.8rem; }
+  .features-item img {
+    width: 5rem; }
+  #description-section, #features-section {
+    padding: 8rem 7rem; }
+  #features-section {
+    padding-bottom: 2rem; }
+  #form-section {
+    background-size: 100%;
+    padding: 3rem; }
+    #form-section form {
+      padding: 2rem; }
+      #form-section form h5 {
+        font-size: 1.5rem;
+        max-width: 33rem; }
+      #form-section form .text-input, #form-section form button {
+        width: 33rem;
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+        font-size: 1.5rem; }
+      #form-section form button {
+        font-size: 1.5rem; }
+      #form-section form .check-box {
+        margin-top: 1.5rem; }
+        #form-section form .check-box label {
+          font-size: 1.2rem; } }
+
+@media only screen and (min-width: 992px) {
+  #banner-section {
+    height: 60rem;
+    padding: 7.5rem 0 0 28.8rem; }
+    #banner-section h1 {
+      font-size: 7rem;
+      max-width: 60rem; }
+    #banner-section .subtitle {
+      font-size: 2.5rem; }
+    #banner-section p {
+      margin: 1rem 0 6rem; }
+    #banner-section a, #banner-section a:link, #banner-section a:visited {
+      padding: 1.5rem 4rem;
+      font-size: 1.8rem; }
+  #description-section {
+    padding: 6rem 35rem; }
+    #description-section p {
+      padding: 0 5rem; }
+  #features-section {
+    padding: 6rem 27rem; }
+  #benefits-section {
+    padding: 7rem 27rem 0; }
+    #benefits-section h3 {
+      background-color: #FF9503;
+      font-weight: normal;
+      padding: 3rem 9rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15); }
+      #benefits-section h3 span {
+        font-weight: bold; }
+  #footer div {
+    padding: 3rem 36rem; }
+    #footer div img {
+      width: 6rem; } }

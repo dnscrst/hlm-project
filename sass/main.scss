@@ -1,0 +1,332 @@
+  @import "base/vars";
+  @import "base/utilities";
+  @import "base/base";
+
+  @media only screen and (min-width: 0px) {
+
+    #banner-section {
+      background-color: $color-secondary;
+      background-image: url("/assets/bg-01.jpg");
+      background-repeat: no-repeat;
+      background-size: 207%;
+      background-position: -84rem 131%;
+      padding: 4rem 8rem 40rem;
+      text-align: center;
+
+      h1, p, .subtitle {
+        color: $light;
+      }
+
+      h1 {
+        font-size: 11rem;
+        margin: 7% 0;
+      }
+
+      .subtitle {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        padding: 0 9rem;
+      }
+
+      p {
+        margin: 3rem 0 6rem;
+        font-size: 1.3rem;
+      }
+
+      a {
+        &,
+        &:link,
+        &:visited {
+          padding: 1.5rem 6rem;
+          background-color: $base-color;
+          font-size: 1.4rem;
+          border-radius: 0.2rem;
+          text-decoration: none;
+          color: $dark;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 1rem;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .features-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 8rem;
+        max-width: 65rem;
+        font-size: 4rem;
+      }
+
+      img {
+        width: 11rem;
+      }
+    }
+
+    #description-section {
+      padding: 10rem 8rem;
+
+      p {
+        margin-top: -1rem;
+      }
+    }
+
+    #features-section {
+      background-image: url("../assets/bg-02.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 10rem 7rem 2rem;
+
+      h3, p {
+        color: $light;
+      }
+    }
+
+    #benefits-section {
+      padding: 10rem 7rem 2rem;
+
+      h3 {
+        background-color: $base-color;
+        font-weight: normal;
+        padding: 3rem 9rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 1.5rem 3rem rgba($dark, .15);
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+
+    #form-section {
+      background-image: url("../assets/bg-03.jpg");
+      background-size: 140%;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      background-position: bottom;
+      padding: 3rem 3rem 38rem;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-secondary;
+        padding: 5rem 4rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 1.5rem 3rem rgba($dark, .15);
+
+        h5 {
+          font-size: 4rem;
+          color: white;
+          max-width: 100%;
+          text-align: center;
+          line-height: 1.6;
+        }
+
+        .text-input, button {
+          width: 100%;
+          padding: 3.5rem;
+          margin-top: 4.5rem;
+          border-radius: 0.5rem;
+          font-size: 4rem;
+        }
+
+        button {
+          background-color: $base-color;
+          font-weight: bold;
+        }
+
+        .check-box {
+          margin-top: 3rem;
+          display: flex;
+          text-align: center;
+
+          label {
+            color: $light;
+            font-size: 3rem;
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+
+    #footer {
+      padding: 1rem 0 2rem;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 3rem 7rem;
+        box-shadow: 0 1.5rem 7rem rgba($dark, 0.15);
+        margin-bottom: 2rem;
+
+        img {
+          width: 16rem;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+
+    #banner-section {
+      background-size: cover;
+      background-position: center;
+      padding: 7.5rem 0 5.8rem 7.5rem;
+      text-align: left;
+
+      h1 {
+        font-size: 6.5rem;
+        margin-bottom: 2.5rem;
+        max-width: 56rem;
+      }
+
+      .subtitle {
+        padding: 0;
+      }
+
+      p {
+        max-width: 44.8rem;
+      }
+    }
+
+    .features {
+      align-items: baseline;
+      flex-direction: row;
+    }
+
+    .features-item {
+      p {
+        max-width: 19rem;
+        font-size: 1.8rem;
+      }
+
+      img {
+        width: 5rem;
+      }
+    }
+
+    #description-section, #features-section {
+      padding: 8rem 7rem;
+    }
+
+    #features-section {
+      padding-bottom: 2rem;
+    }
+
+    #form-section {
+      background-size: 100%;
+      padding: 3rem;
+
+      form {
+        padding: 2rem;
+
+        h5 {
+          font-size: 1.5rem;
+          max-width: 33rem;
+        }
+
+        .text-input, button {
+          width: 33rem;
+          padding: 1.5rem;
+          margin-top: 1.5rem;
+          font-size: 1.5rem;
+        }
+
+        button {
+          font-size: 1.5rem;
+        }
+
+        .check-box {
+          margin-top: 1.5rem;
+
+          label {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+
+    #banner-section {
+      height: 60rem;
+      padding: 7.5rem 0 0 28.8rem;
+
+      h1 {
+        font-size: 7rem;
+        max-width: 60rem;
+      }
+
+      .subtitle {
+        font-size: 2.5rem;
+      }
+
+      p {
+        margin: 1rem 0 6rem;
+      }
+
+      a {
+        &,
+        &:link,
+        &:visited {
+          padding: 1.5rem 4rem;
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    #description-section {
+      padding: 6rem 35rem;
+
+      p {
+        padding: 0 5rem;
+      }
+    }
+
+    #features-section {
+      padding: 6rem 27rem;
+    }
+
+    #benefits-section {
+      padding: 7rem 27rem 0;
+
+      h3 {
+        background-color: $base-color;
+        font-weight: normal;
+        padding: 3rem 9rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 1.5rem 3rem rgba($dark, .15);
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+
+    #footer {
+
+      div {
+        padding: 3rem 36rem;
+
+        img {
+          width: 6rem;
+        }
+      }
+    }
+  }

@@ -1,0 +1,47 @@
+@import "vars";
+
+@media only screen and (min-width: 0) {
+  .main-color {
+    color: $base-color;
+  }
+
+  p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+
+  .heading-third {
+    font-size: 4.3rem ;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .center-text {
+    text-align: center;
+  }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .heading-third {
+    font-size: 3.5rem ;
+  }
+
+  .features {
+    align-items: baseline;
+    flex-direction: row;
+  }
+
+  .features-item {
+    p {
+      max-width: 19rem;
+      font-size: 1.8rem;
+    }
+
+    img {
+      width: 5rem;
+    }
+  }
+}
